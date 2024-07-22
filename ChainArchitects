@@ -1,0 +1,23 @@
+# ChainArchitects.py
+
+class ChainArchitects:
+    def __init__(self, firm_name, headquarters, services_offered):
+        self.firm_name = firm_name
+        self.headquarters = headquarters
+        self.services_offered = services_offered
+    
+    def display_firm_info(self):
+        print(f"Firm Name: {self.firm_name}")
+        print(f"Headquarters: {self.headquarters}")
+        print("Services Offered:")
+        for service in self.services_offered:
+            print(f"- {service}")
+
+# Example usage
+if __name__ == "__main__":
+    firm_name = "ChainArchitects"
+    headquarters = "Global"
+    services_offered = ["Blockchain consulting", "Smart contract development", "Blockchain architecture design"]
+    
+    chain_architects = ChainArchitects(firm_name, headquarters, services_offered)
+    chain_architects.display_firm_info()
